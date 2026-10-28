@@ -6,8 +6,8 @@
 #   Launch-Godot-DisplayXR.cmd -AppExe <path>     a specific copy
 #   Launch-Godot-DisplayXR.cmd -AppExe <game.exe> -ViewPx 1920x1080   another export, window size in px
 #
-# -Runtime dev needs a from-source DisplayXR build with the draft PRs listed in coupling.ps1 and the GL depth-format fix
-# (Godot's GL renderer needs a depth swapchain):
+# Needs DisplayXR v2.56.0 or later (Godot's GL renderer needs a depth swapchain, #2429).
+# -Runtime dev needs a from-source DisplayXR build with the draft PRs listed in coupling.ps1:
 # pass its manifest with -DevRuntimeJson, or set $DevRuntimeJson (and $AppExe) in a local.ps1 next
 # to this script (not committed). The dev build's client must match the running displayxr-service.
 #

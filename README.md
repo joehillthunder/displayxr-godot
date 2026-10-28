@@ -48,9 +48,9 @@ start and doesn't follow the window: re-launch after resizing. Not yet measured 
 
 ## Known issues
 
-- Godot's Compatibility (GL) renderer needs a depth swapchain format. DisplayXR's GL compositor
-  doesn't advertise one yet (a fix is proposed upstream); until it lands Godot logs "No usable depth
-  swap chain format available" and XR fails to start. Use `-Runtime dev` with a build that has it.
+- Godot's Compatibility (GL) renderer needs a depth swapchain format. DisplayXR v2.56.0 and later
+  advertise them ([#2429](https://github.com/DisplayXR/displayxr-runtime/pull/2429)); on older runtimes
+  Godot logs "No usable depth swap chain format available" and XR fails to start.
 - The Godot XR Tools demo waits for a controller trigger ("Hold trigger to continue").
 - Godot's default window (1152×648 px) is small on a high-DPI panel, so the true-geometry view is
   narrow. Use `-Fullscreen` or pass the window size with `-ViewPx WxH`.
